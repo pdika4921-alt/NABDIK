@@ -1,10 +1,10 @@
 {
   "name": "dompetku",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "PWA Catatan Keuangan Pribadi",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node -e \"const fs=require('fs');fs.cpSync('public','dist',{recursive:true})\"",
     "start": "node server.js",
     "dev": "node server.js"
   },
@@ -13,7 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.6",
-    "express": "^5.2.1",
-    "sql.js": "^1.14.2"
+    "express": "^5.2.1"
   }
 }
